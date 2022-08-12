@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+document.write('<h2>Olá</h2>');
+document.write('<p>Eu sou o Icaro Marcucci.</p>');
+document.write('<p>Curso Iniciando com JS.</p>');
+document.write('<h3>##########################################</h3>');
+
+var nome = "Icaro \n";         //Variavel comum
+const idade = 50;           //Contante
+
+if(nome == "Icaro \n"){
+  let nome = "Maria \n";       //Variavel local
+  document.write("<br>",nome);
+}
+
+document.write("<br>",nome);
+document.write("<br>",idade);
+
+// Funções no JS:
+
+document.write('<h3>Funções no JS</h3>');
+
+document.write(subtrai(2,4));
+
+var soma = function(a,b){
+  return a + b;
+};
+
+document.write("<br>", soma(2,2));
+
+function subtrai(a,b){
+  return a - b;
+}
+
+nomeCompleto("Icaro","Marcucci\n");
+
+function nomeCompleto(nome,sobrenome){
+  document.write("<br>Nome Completo: " + nome + " " + sobrenome);
+}
+
+</script>
